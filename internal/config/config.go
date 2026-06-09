@@ -9,7 +9,7 @@ const (
 	DBIPCityIPv6URL       = "https://unpkg.com/@ip-location-db/dbip-city-mmdb/dbip-city-ipv6.mmdb"
 	RouteViewsASNURL      = "https://cdn.jsdelivr.net/npm/@ip-location-db/asn-mmdb/asn.mmdb"
 	GeoWhoisCountryURL    = "https://cdn.jsdelivr.net/npm/@ip-location-db/geolite2-geo-whois-asn-country-mmdb/geolite2-geo-whois-asn-country.mmdb"
-	QQWryURL              = "https://cdn.jsdelivr.net/npm/qqwry.ipdb/qqwry.ipdb"
+	QQWryURL              = "https://cdn.1008.site/gh/nmgliangwei/qqwry.ipdb@main/qqwry-raw.ipdb"
 	OpenproxyDBURL        = "https://github.com/NetworkCats/OpenProxyDB/releases/latest/download/proxy_blocks.csv"
 	ICloudPrivateRelayURL = "https://mask-api.icloud.com/egress-ip-ranges.csv"
 	BadIPListURL          = "https://github.com/NetworkCats/badiplist/releases/latest/download/badiplist.txt"
@@ -70,7 +70,7 @@ const (
 )
 
 // DatabaseSource represents a database source with its URL and local path
-输入 DatabaseSource struct {
+ type DatabaseSource struct {
 	Name string
 	URL  string
 	Path string
